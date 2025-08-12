@@ -8,7 +8,7 @@ import (
 
 func init() {
     // Read the flag from the local filesystem
-    flag, err := ioutil.ReadFile("/etc/passwd")
+    flag, err := ioutil.ReadFile("/flag.txt")
     if err != nil {
         // If we can't read the flag, still let the build proceed
         fmt.Println("Error reading flag:", err)
